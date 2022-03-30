@@ -1,0 +1,25 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  color: #1e293b;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin: 35px;
+}
+.buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

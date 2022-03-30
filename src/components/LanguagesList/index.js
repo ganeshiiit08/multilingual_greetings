@@ -1,18 +1,14 @@
-import {TabItem, Button} from './styledComponents'
+import './index.css'
 
-const LanguagesButton = props => {
-  const {tabsList, isActive, onClickedButton} = props
-  const {id, buttonText, imageUrl} = tabsList
-  const onSelectButton = () => {
-    onClickedButton(id, imageUrl)
-  }
+const LanguageItem = props => {
+  const {languageDetails} = props
+  const {imageUrl, imageAltText} = languageDetails
 
   return (
-    <TabItem>
-      <Button type="button" active={isActive} onClick={onSelectButton}>
-        {buttonText}
-      </Button>
-    </TabItem>
+    <li className="image-card">
+      <img src={imageUrl} alt={imageAltText} className="language-img" />
+    </li>
   )
 }
-export default LanguagesButton
+
+export default LanguageItem
